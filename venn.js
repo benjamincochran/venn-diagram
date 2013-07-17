@@ -380,8 +380,8 @@ var vennPaper
 var zoomSet;
  
 function vennDraw() {
-    vennPaper.clear();
-    zoomSet.items = [];
+    //vennPaper.clear();
+    //zoomSet.items = [];
     
     //find basic centers for the venn sets
     var vennSetIndex = 0;
@@ -393,7 +393,7 @@ function vennDraw() {
             x: vennPaper.center.x + Math.cos((angle * Math.PI) / 180) * vennSet.size * sizeRadiusMultiplier, 
             y: vennPaper.center.y - Math.sin((angle * Math.PI) / 180) * vennSet.size * sizeRadiusMultiplier
         };
-        vennPaper.circle(vennSet.center.x, vennSet.center.y, 3).attr({fill: vennSet.color});
+        //vennPaper.circle(vennSet.center.x, vennSet.center.y, 3).attr({fill: vennSet.color});
         vennSet.r = vennSet.size * (sizeRadiusMultiplier);
         vennSetIndex++;
     }
